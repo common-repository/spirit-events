@@ -1,0 +1,565 @@
+/*
+* Calendar object
+*/
+
+.post-type-archive-spirit-events .sidebar, .post-type-archive-spirit-events #sidebar {
+    display: none;
+}
+
+.post-type-archive-spirit-events main, .single-spirit-events main {
+    max-width: 1280px;
+    position: relative;
+    margin: 0 auto 62px auto;
+    /* width: calc(100% - 4rem); */
+    background-color: #ffffff;
+    padding: 15.25px;
+    position: relative;
+    top: 20px;
+    margin-bottom: 62px;    
+}
+
+div#calendar div.box{
+    position:relative;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:40px;
+    background-color:   #787878 ;      
+}
+
+div#calendar div.box {
+    background-color: transparent;
+    height: auto;
+}
+    
+div#calendar div.box .header { 
+    background: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    height: 168px;
+    margin-bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    position: relative;
+    left: 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+div#calendar ul.label {
+    background-color: #0a315a;
+    margin: 0;
+    border-radius: 3px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 100%;
+    float: left;
+}
+
+div#calendar ul.label li {
+    color: white;
+    width: 14.2857%;
+    margin:0px;
+    padding:0px;
+    float:left;
+    list-style-type:none;
+    height:40px;
+    line-height:40px;
+    vertical-align:middle;
+    text-align:center;
+    font-size: 15px;
+    background-color: transparent;
+}
+
+div#calendar div.box .header a.prev, div#calendar div.box .header a.next {
+    padding: 0 20px;
+    width: 140px;
+}
+
+div#calendar div.box .header .title {
+    font-weight: 700;
+    color: #5e7083;
+    margin-top: -32px;
+    font-size: 23px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+div#calendar div.box .header .title .year {
+    display: block;
+    height: 29px;
+    font-size: 14px;
+}
+
+div#calendar div.box-content {
+    border: none;
+}
+
+div#calendar ul.dates {
+    float: left;
+    margin: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding: 0px;
+    margin-left: 1px;
+    margin-top: -1px;
+    width: calc(100% - 2px);
+    border: 1px solid #dedede;
+    border-bottom: none;
+    border-top: none;
+    position: relative;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (1fr)[5];
+    grid-template-rows: repeat(5, 1fr);
+    padding-bottom: 1px;
+    -ms-grid-columns: (1fr)[7];
+    grid-template-columns: repeat(7, 1fr);
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    grid-gap: 1px;
+    background: #dedede;
+}
+
+div#calendar ul.dates li {
+    background-color: #fff;
+    width: auto;
+    margin: 0px;
+    padding-top: 45px;
+    outline: 2px solid transparent;
+    outline-offset: -1px;
+    position: relative;
+    display: block;
+    height: 124px;
+}
+
+div#calendar div.box .header .title .month {
+    color: black;
+}
+
+div#calendar ul.dates li .day_number {
+    position: absolute;
+    height: 1em;
+    top: 10%;
+    right: 10%;
+    line-height: 1em;
+    font-size: 17px;
+    color: gray;
+}
+
+div#calendar ul.dates li.mask {
+    background-color: #f8f8f8;
+}
+
+div#calendar ul.dates li a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+}
+
+div#calendar ul.dates li .event-item {
+    max-height: 34px;
+    height: auto;
+    display: block;
+    width: 100%;
+    border-radius: 2px;
+    font-size: 12px;
+    color: white;
+    padding: 5px 6px;
+    margin: 2px 6px;
+    line-height: 1em;
+    font-weight: 500;
+    text-align: left;
+    position: relative;
+    top: 0;
+}
+
+div#calendar div.box .header a.next:after {
+    content: "";
+    display: inline-block;
+    width: 11px;
+    height: 100%;
+    position: relative;
+    right: -8px;
+    top: 0px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../src/arrow-right.png);
+}
+
+div#calendar div.box .header a.prev:before {
+    content: "";
+    display: inline-block;
+    width: 11px;
+    height: 100%;
+    position: relative;
+    left: -8px;
+    top: 0px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../src/arrow-left.png);
+}
+
+div#calendar ul.dates li .event-item .event-item-time {
+    padding-right: 3px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    div#calendar ul.dates li .event-item {
+        margin: 0;
+        font-size: 10px;
+        padding: 2px;
+        word-break: break-all;
+        overflow: hidden;
+        max-height: 14px;
+        line-height: 12px;
+    }
+
+    div#calendar ul.dates li {
+        outline: none !important;
+    }
+
+    div#calendar ul.dates li .event-item .event-item-time {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    div#calendar div.box .header {
+        height: 188px;
+    }
+
+    div#calendar div.box .header .title {
+        position: absolute;
+        margin-top: 0;
+        top: 28px;
+    }
+
+    div#calendar div.box .header .title .year {
+        height: 26px;
+    }    
+
+    div#calendar div.box .header a.next, div#calendar div.box .header a.prev {
+        margin-top: 102px;
+    }    
+}
+
+div#calendar{
+  margin:0px auto;
+  padding:0px;
+  font-family:'Roboto Slab', serif;
+}
+ 
+div#calendar div.header{
+    line-height:40px;  
+    vertical-align:middle;
+    position:absolute;
+    left:11px;
+    top:0px;
+    width:100%;
+    height:40px;   
+    text-align:center;
+}
+
+div#calendar div.header span.title{
+    color:#FFF;
+    font-size:18px;
+}
+ 
+div#calendar div.header a.prev{
+    left:0px;
+}
+ 
+div#calendar div.header a.next{
+    right:25px;
+}
+ 
+div.clear{
+    clear:both;
+}  
+
+/*
+* Single Page
+*/
+.single-spirit-events .single-side-content {
+    float: right;
+    margin: 0px 0px 30px 40px;
+    min-width: 280px;
+}
+
+.single-spirit-events .single-side-content .event-attr {
+    margin: 0px 0px 30px 7px;
+}
+
+.single-spirit-events .single-side-content .event-attr div {
+    color: #000;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.single-spirit-events .single-side-content .event-attr div:before {
+    display: inline-block;
+    content: "";
+    width: 20px;
+    height: 2em;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    margin-right: 20px;
+}
+
+.single-spirit-events .single-side-content .event-attr div.date:before {
+    content: "";
+    background-image: url(../src/calendar2black.png);
+}
+
+.single-spirit-events .single-side-content .event-attr div.time:before {
+    content: "";
+    background-image: url(../src/uradne-hodiny.png);
+}
+
+.single-spirit-events .single-side-content .event-attr div.place:before {
+    content: "";
+    background-image: url(../src/map-pin-black.png)
+}
+
+.single-spirit-events a {
+    text-decoration: none;
+}
+
+.single-spirit-events .calendar:before, .tssev-widget .calendar:before {
+    content: "";
+    display: inline-block;
+    background-image: url(../src/calendar2.png);
+    width: 19px;
+    height: 19px;
+    position: relative;
+    top: -2px !important;
+    right: 18px;
+}
+
+.single-spirit-events .btn-submit, .tssev-widget .widget-button,
+#calendar .btn 
+{
+    letter-spacing: 1px;
+    font-size: 13px;
+    text-transform: uppercase;
+    text-decoration: none;
+    -webkit-box-shadow: 1px 3px 0px 0px rgba(40, 40, 40, 0.15);
+    box-shadow: 1px 3px 0px 0px rgba(40, 40, 40, 0.15);
+    height: 36px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    line-height: 36px;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.btn-submit.calendar {
+    letter-spacing: 3px;
+}
+
+.single-spirit-events .btn-submit:hover, .tssev-widget .widget-button:hover,
+#calendar .btn:hover  {
+    color: white;
+    text-decoration: none;
+    -webkit-box-shadow: 1px 3px 0px 0px rgba(40, 40, 40, 0.15);
+    box-shadow: 1px 3px 0px 0px rgba(40, 40, 40, 0.15);    
+}
+
+.single-spirit-events .map-wrapper {
+    position: relative;
+    max-width: 417px;
+    min-width: 250px;
+    width: 100%;
+    padding: 4px;
+    background: white;
+    -webkit-box-shadow: 3px 6px 18px 0px rgba(34, 30, 31, 0.21);
+    box-shadow: 3px 6px 18px 0px rgba(34, 30, 31, 0.21);
+    margin-bottom: 40px;
+}
+
+.single-spirit-events .map-wrapper.side {
+    width: 350px;
+    height: 260px;
+    margin-bottom: 35px;
+}
+
+.single-spirit-events .map-wrapper #map {
+    border: 1px solid #e7e7e7;
+}
+
+.single-spirit-events .map-wrapper.side #map {
+    height: 203px;
+}
+
+.single-spirit-events .map-wrapper .map-address {
+    padding: 21px 0;
+    text-align: center;
+    font-size: 13.5px;
+    font-weight: 500;
+}
+
+.single-spirit-events .map-wrapper.side .map-address {
+    padding: 17px 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .single-spirit-events .map-wrapper.side {
+        width: 100% !important;
+    }
+
+    .single-spirit-events .map-wrapper.side {
+        max-width: none;
+        min-width: unset !important;
+        height: 247px;
+        margin-bottom: 15px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+}
+
+.tssev-thumbnail {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.event-content {
+    padding: 20px 0px;
+}
+
+/*
+* Widget Box
+*/
+
+.tssev-widget .widget-event-box a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.tssev-widget .widget-event-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-bottom: 14px;
+    margin-bottom: 14px;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.tssev-widget .widget-event-box .widget-event-date {
+    font-weight: 600;
+    display: inline-block;
+    text-align: center;
+    width: 43px;
+    height: 47px;
+    border-radius: 3px;
+    /* background-color: #e49229; */
+    color: white;
+    margin-right: 14px;
+    max-width: none;
+    min-width: 43px;
+}
+
+.tssev-widget .widget-event-box .widget-event-text {
+    color: black;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.618em;
+    text-align: left;
+    max-width: none;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.tssev-widget .widget-event-name {
+    margin: 0px 5px;
+}
+
+.tssev-widget .widget-event-box .widget-event-date .widget-event-date-day {
+    color: #ffffff;
+    font-size: 22px;
+    letter-spacing: 1px;
+    line-height: 34px;
+}
+
+.tssev-widget .widget-event-box .widget-event-date .widget-event-date-month {
+    margin-top: -7px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.tssev-widget .widget-event-box a {
+    text-decoration: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.tssev-widget .widget-event-box a:hover {
+    text-decoration: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+/*
+* Live stream
+*/
+.tssev-video-label {
+    display: inline-block;
+    padding: 1px 0.5em 1px 0.5em;
+    color: #FFF;
+    font-weight: 700;
+    border-radius: 3px;
+    line-height: 1.4em;
+}
+
+.tssev-video-object {
+    display: inline-block;
+}
+
+.tssev-video-object .dashicons {
+	font-size: 15px;
+	height: 15px;
+	margin-right: 2px;
+}

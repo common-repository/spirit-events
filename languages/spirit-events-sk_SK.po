@@ -1,0 +1,244 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Spirit Events\n"
+"POT-Creation-Date: 2020-04-27 07:44+0200\n"
+"PO-Revision-Date: 2020-04-27 08:30+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: sk_SK\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n>=2 && n<=4 ? 1 : 2);\n"
+"X-Generator: Poedit 2.3\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: spirit-events.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.min.js\n"
+
+#: admin/admin.php:57 admin/admin.php:58 templates/settings-page.php:5
+msgid "Settings"
+msgstr "Nastavenia"
+
+#: includes/class-calendar.php:173
+msgid "January"
+msgstr "Január"
+
+#: includes/class-calendar.php:174
+msgid "February"
+msgstr "Február"
+
+#: includes/class-calendar.php:175
+msgid "March"
+msgstr "Marec"
+
+#: includes/class-calendar.php:176
+msgid "April"
+msgstr "April"
+
+#: includes/class-calendar.php:177
+msgid "May"
+msgstr "Máj"
+
+#: includes/class-calendar.php:178
+msgid "June"
+msgstr "Jún"
+
+#: includes/class-calendar.php:179
+msgid "July"
+msgstr "Júl"
+
+#: includes/class-calendar.php:180
+msgid "August"
+msgstr "August"
+
+#: includes/class-calendar.php:181
+msgid "September"
+msgstr "September"
+
+#: includes/class-calendar.php:182
+msgid "October"
+msgstr "Október"
+
+#: includes/class-calendar.php:183
+msgid "November"
+msgstr "November"
+
+#: includes/class-calendar.php:184
+msgid "December"
+msgstr "December"
+
+#: includes/class-calendar.php:200
+msgid "Mon."
+msgstr "Pon."
+
+#: includes/class-calendar.php:201
+msgid "Tue."
+msgstr "Uto."
+
+#: includes/class-calendar.php:202
+msgid "Wed."
+msgstr "Str."
+
+#: includes/class-calendar.php:203
+msgid "Thu."
+msgstr "Štv."
+
+#: includes/class-calendar.php:204
+msgid "Fri."
+msgstr "Pia."
+
+#: includes/class-calendar.php:205
+msgid "Sat."
+msgstr "Sob."
+
+#: includes/class-calendar.php:206
+msgid "Sun."
+msgstr "Ned."
+
+#: includes/functions.php:75 includes/widget.php:66
+#: templates/settings-page.php:45 templates/single-spirit-events.php:50
+msgid "Live stream"
+msgstr "Živé vysielanie"
+
+#: includes/functions.php:79
+#, php-format
+msgid "in %d minute"
+msgid_plural "in %d minutes"
+msgstr[0] "o %d minútu"
+msgstr[1] "o %d minúty"
+msgstr[2] "o %d minút"
+
+#: includes/functions.php:83
+msgid "Live"
+msgstr "Naživo"
+
+#: includes/metabox.php:6
+msgid "Event settings"
+msgstr "Nastavenia"
+
+#: includes/metabox.php:32
+msgid "Display event also in front page?"
+msgstr "Zobraziť v aktualitách?"
+
+#: includes/metabox.php:41
+msgid "Event date & time"
+msgstr "Kedy"
+
+#: includes/metabox.php:42
+msgid "From"
+msgstr "Od"
+
+#: includes/metabox.php:46
+msgid "To"
+msgstr "Do"
+
+#: includes/metabox.php:54
+msgid "Event place"
+msgstr "Kde"
+
+#: includes/metabox.php:60
+msgid "Event live stream"
+msgstr "Živé vysielanie link"
+
+#: includes/metabox.php:66
+msgid ""
+"Fields Latitude & Longitude are optional. When filled in, Google map is "
+"displayed."
+msgstr ""
+"Údaje Latitude a Longitude (súradnice) nie sú povinné. Ak ich vyplníte, "
+"zobrazí sa Google mapa."
+
+#: includes/metabox.php:69
+msgid "Latitude"
+msgstr "Zem. šírka"
+
+#: includes/metabox.php:71
+msgid "Longitude"
+msgstr "Zem. dĺžka"
+
+#: includes/post-type.php:13 includes/widget.php:39
+msgid "Events"
+msgstr "Udalosti"
+
+#: includes/post-type.php:14
+msgid "Event"
+msgstr "Udalosť"
+
+#: includes/post-type.php:15
+msgid "Update event"
+msgstr "Upraviť udalosť"
+
+#: includes/post-type.php:21
+msgid "events"
+msgstr "udalosti"
+
+#. Plugin Name of the plugin/theme
+#: includes/widget.php:18 includes/widget.php:19
+msgid "Spirit Events"
+msgstr "Spirit Udalosti"
+
+#: includes/widget.php:74
+msgid "Calendar"
+msgstr "Prejsť na kalendár"
+
+#: templates/settings-page.php:14
+msgid "Google API"
+msgstr ""
+
+#: templates/settings-page.php:18
+msgid "API Key"
+msgstr "API Kľúč"
+
+#: templates/settings-page.php:25
+msgid "Color scheme"
+msgstr "Farby"
+
+#: templates/settings-page.php:30
+msgid "Button"
+msgstr "Tlačidlo"
+
+#: templates/settings-page.php:35
+msgid "Button hover"
+msgstr "Tlačidlo hover"
+
+#: templates/settings-page.php:40
+msgid "Event item"
+msgstr "Udalosť"
+
+#: templates/settings-page.php:52
+msgid "Save"
+msgstr "Uložiť"
+
+#: templates/single-spirit-events.php:41
+msgid "Add to calendar"
+msgstr "Vložiť do kalendára"
+
+#: templates/single-spirit-events.php:60
+msgid "Author: "
+msgstr "Autor: "
+
+#: templates/single-spirit-events.php:73
+msgid "Sorry, nothing to display."
+msgstr "Žiaden obsah."
+
+#. Plugin URI of the plugin/theme
+msgid "https://thespirit.studio/spirit-events/"
+msgstr "https://thespirit.studio/spirit-udalosti/"
+
+#. Description of the plugin/theme
+msgid "Simple event calendar plugin."
+msgstr "Jednoduchý kalendár podujatí."
+
+#. Author of the plugin/theme
+msgid "The Spirit Studio"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://thespirit.studio/"
+msgstr ""
